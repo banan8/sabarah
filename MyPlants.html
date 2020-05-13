@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <title>نباتاتي</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lateef" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+
+  body{
+  font-family: 'Lateef', cursive;
+  font-size: 200%; }
+
+  div center h4 a{color:#ffffff;}
+  a {color:#558000}
+  a:hover {color:#558000;}
+
+
+  .slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% { opacity: 0;
+        transform: translateY(70%); }
+    100% {opacity: 1;
+        transform: translateY(0%);}
+}
+@-webkit-keyframes slide {
+    0% { opacity: 0;
+        -webkit-transform: translateY(70%);}
+    100% { opacity: 1;
+        -webkit-transform: translateY(0%); }
+      }
+
+.imglogo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;}
+
+.imageBox:hover .hoverImg {
+    display: block;
+}
+
+.imageBox {
+  position: relative;
+  float: left;
+}
+
+.imageBox .hoverImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.imageBox:hover .hoverImg {
+  display: block;
+}
+
+.cntr{
+  position: relative;
+  left:11.5%;}
+
+
+  </style>
+</head>
+<body ng-app="ngAnimate" >
+
+<div style=" background-color:#ffffe6;">
+ <a  href="home.html"> <img class="imglogo" src="picture/logo.png" alt="logo" style =" width:700px; height:550px;"></a>
+    </div>
+    <hr>
+    <div class="topnav container cntr slide" >
+
+      <a href="Contact.html"><div class="imageBox">
+        <div class="imageInn">
+        <img src="picture/4.jpg" alt="تواصل معنا" style =" width:150px; height:150px;">  </div>
+      <div class="hoverImg"> <img src="picture/44.jpg" alt="تواصل معنا"  style =" width:150px; height:150px;"></div></div></a>
+
+      <a href="OutdoorPlants.html"><div class="imageBox">
+        <div class="imageInn">
+        <img src="picture/3.jpg" alt="نباتات خارجية " style =" width:150px; height:150px;"></div>
+      <div class="hoverImg"><img src="picture/33.jpg" alt="المتجر" style =" width:150px; height:150px;"></div></div></a>
+
+      <a href="IndoorPlants.html"><div class="imageBox">
+        <div class="imageInn">
+        <img src="picture/5.jpg" alt=" نباتات داخلية  " style =" width:150px; height:150px;"></div>
+      <div class="hoverImg"><img src="picture/55.jpg" alt="المتجر" style =" width:150px; height:150px;"></div></div></a>
+
+
+      <a href="MyPlants.html"><div class="imageBox">
+        <div class="imageInn">
+        <img src="picture/2.jpg" alt="نباتاتي" style =" width:150px; height:150px;"></div>
+      <div class="hoverImg"> <img src="picture/22.jpg" alt="نباتاتي" style =" width:150px; height:150px;"></div></div></a>
+
+      <a href="Tools.html"><div class="imageBox">
+        <div class="imageInn">
+        <img src="picture/6.jpg" alt=" ادوات " style =" width:150px; height:150px;"></div>
+      <div class="hoverImg"><img src="picture/66.jpg" alt="المتجر" style =" width:150px; height:150px;"></div></div></a>
+
+
+    </div>
+
+
+
+
+
+
+    <hr>
+
+    <div class="container text-center ">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#home">مصطلحات النباتات</a></li>
+        <li><a href="#menu1">مشاكل النباتات وحلولها </a></li>
+      </ul>
+
+  <div class="tab-content">
+
+        <div id="home" class="tab-pane fade in active">
+
+
+
+         
+            
+     <hr>
+
+            <div>
+            <div class="media">
+       <div class="media-left">
+         <img src="picture/111.jpg" alt="plant" class="media-object" style="width:160px">
+       </div>
+       <div class="media-body">
+         <h2 class="media-heading">ضوء مرشح</h2>
+         <h3>
+           الضوء الذي يأتي من النافذة ماراً بستارة خفيفة للتقليل من حرارته وحدته
+         </h3>
+       </div>
+     </div>
+     <hr>
+     <div class="media">
+    <div class="media-body">
+      <h2 class="media-heading">الضوء الساطع</h2>
+      <h3> الضوء القوي بدون أشعة شمس مباشرة </h3>
+    </div>
+    <div class="media-right">
+      <img src="picture/222.jpg" alt="plant" class="media-object" style="width:160px">
+    </div>
+  </div>
+   </div>
+<hr>
+   <div>
+     <div class="media">
+<div class="media-left">
+<img src="picture/333.jpg" alt="plant" class="media-object" style="width:160px">
+</div>
+<div class="media-body">
+<h2 class="media-heading">ضوء خافت </h2>
+<h3>
+  الضوء القليل البعيد عن مصادر الاضاءة الطبيعية أو الصناعية.
+</h3>
+</div>
+</div>
+   <hr>
+<div class="media">
+<div class="media-body">
+<h2 class="media-heading"> فترة النمو النشط</h2>
+<h3>الوقت الذي ينتج فيه النبات أفرع وأزهار وأوراق جديدة بشكل ملحوظ تكون طوال العام عادةً عدا فصل الشتاء</h3>
+</div>
+<div class="media-right">
+<img src="picture/444.jpg" alt="plant" class="media-object" style="width:160px">
+</div>
+</div>
+</div>
+<hr>
+<div>
+  <div class="media">
+<div class="media-left">
+<img src="picture/555.jpg" alt="plant" class="media-object" style="width:160px">
+</div>
+<div class="media-body">
+ <h2 class="media-heading"> فترة السكون </h2>
+<h3>
+  الوقت الذي يتوقف فيه النبات عن إنتاج أفرع وأوراق وأزهار جديدة (ساكن), عادةً تكون خلال فصل الشتاء
+</h3>
+</div>
+<hr>
+</div>
+
+
+<div class="media">
+<div class="media-body">
+<h2 class="media-heading"> عقدة</h2>
+<h3> بروز واضح يحيط بالساق ويتكرر على مسافات منتظمة من الساق </h3>
+</div>
+<div class="media-right">
+<img src="picture/666.jpg" alt="plant" class="media-object" style="width:160px">
+</div>
+</div>
+</div>
+<hr>
+
+<div>
+  <div class="media">
+<div class="media-left">
+<img src="picture/777.jpg" alt="plant" class="media-object" style="width:160px">
+</div>
+<div class="media-body">
+<h2 class="media-heading"> قِنَّاْبَة</h2>
+<h3>
+  الورقة من النبات تكون تحت الزهرة مباشرةً وتظهر أحياناً بألوان مميزة تطغى على لون الأزهار التي قد تكون غير واضحة لصغرها
+</h3>
+</div>
+</div>
+<hr>
+
+<div class="media">
+<div class="media-body">
+<h2 class="media-heading"> ريزومات</h2>
+<h3> ساق أفقية على التربة تنتج جذوراً لأسفل وساق قائمة وأوراق وأفرع للأعلى </h3>
+</div>
+<div class="media-right">
+<img src="picture/888.jpg" alt="plant" class="media-object" style="width:160px">
+</div>
+</div>
+</div>
+<hr>
+
+<div class="media">
+<div class="media-left">
+<img src="picture/999.jpg" alt="plant" class="media-object" style="width:160px">
+</div>
+<div class="media-body">
+<h2 class="media-heading"> قلف</h2>
+<h3>
+  القلف هو قشرة الساق
+</h3>
+</div>
+</div>
+<hr>
+
+
+</div>
+
+          
+
+
+          <div id="menu1" class="tab-pane fade">
+
+
+
+  <h2>مشاكل النباتات وحلولها</h2>
+
+  <table  table border="10px"  text_align="center">
+    <tr>
+      <th  class="text-center"> المشكلة</th>
+      <th  class="text-center">السبب المتوقع</th>
+      <th  class="text-center">الحل المقترح</th>
+      <th  class="text-center"> تعليقات  </th>
+    </tr>
+    <tr>
+      <td>تساقط الأوراق</td>
+      <td><ul><li>تغير مفاجئ في درجة الحرارة</li>
+  <li>تعرضها لتيار قوي (بارد أوحار) جفاف الجذور لسبب ما (أثناء النقل مثلاً)</li></ul></td>
+      <td>ينقل النبات إلى مكان مناسب بعيد عن التيارات ومصادر الحرارة وتوفر له الرطوبة المناسبة والضوء حسب حاجته.</td>
+      <td>أحياناً يكون تساقط الورق ظاهرة طبيعية كأحد وسائل الإخراج في النبات.</td>
+    </tr>
+    <tr>
+      <td>تحول أطراف الأوراق وحوافها إلى اللون الأسود</td>
+      <td><ul><li>جفاف الهواء المحيط</li>
+  <li>أو عدم الانتظام بالري</li>
+  </ul></td>
+      <td><ul><li>يوضع الأصيص فوق حوض يحتوي على حصى متساوي الحجم ومبلل</li>
+  <li>ترش الأوراق بالرذاذ بشكل متكرر (مرتين يومياً مثلاً)</li>
+  <li>الانتظام بالري</li></ul></td>
+  <td>تحصل مثل هذه المشكلة للنباتات ذات الأوراق الرفيعة أكثر من غيرها</td>
+    </tr>
+    <tr>
+      <td>ذبول الأوراق</td>
+      <td>الجفاف (العطش) المفرط أو الإغراق (ري مفرط)</td>
+      <td><ul><li>عند الجفاف يوضع الأصيص في حوض ماء لمدة كافية لإنعاشه حتى يرتوي (حسب حجم الأصيص) فقد تحتاج عشر دقائق وقد تحتاج ساعة!</li>
+  <li>وعند الري المفرط تنقل النبتة إلى حوض يحتوي على تربة جافة كي تمتص الرطوبة الزائدة</li>
+  </ul></td>
+   <td>المحافظة على ري النبتة بانتظام وبكميات متوازنة</td>
+    </tr>
+    <tr>
+      <td>ظهور بقع سوداء على الأوراق</td>
+      <td>تعرضها المباشر لأشعة الشمس اللاسعة</td>
+      <td>تقطع الأجزاء السوداء وعند نقل النبتة من بيئة لأخرى يجب مراعاة التدرج في التعرض للضوء</td>
+   <td>لا تنقل من منطقة قليلة الضوء إلى منطقة شديدة الإضاءة فجأة!</td>
+    </tr>
+    <tr>
+      <td>تجعد والتفاف في حواف الأوراق</td>
+      <td>الإضاءة شديدة جداً</td>
+      <td>انقل الأصيص إلى مكان أقل ضوءاً</td>
+   <td>عدم التعرض لأشعة الشمس المباشرة</td>
+    </tr>
+    <tr>
+      <td>إصفرار الأوراق وتساقطها</td>
+      <td><ul><li>التعرض لتيار هوائي مباشر</li>
+  <li>أو السقي فوق الحاجة</li>
+  </ul></td>
+      <td><ul><li>أبعد النبتة عن مصدر التيار</li>
+  <li>قلل كمية السقي</li>
+  </ul></td>
+   <td><ul><li>أحياناً يكون تساقط الورق ظاهرة طبيعية كأحد وسائل الإخراج في النبات</li>
+  <li>إذا اصفرت الورقة ككتلة واحدة وكانت متشبعة رطوبة فهذا دليل على زيادة كمية الماء عن الحاجة</li></ul></td>
+    </tr>
+  </table>
+
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+          <script>
+          $(document).ready(function(){
+              $(".nav-tabs a").click(function(){
+                  $(this).tab('show');
+              });
+          });
+          </script>
+
+
+
+
+<footer style="background-color:#54542c" class="slide">
+<hr>
+<div><center> <h4 style="color:#ffffff">
+&copy; جميع الحقوق محفوظة 2018 |
+<a href="home.html"> صبّــارة </a>
+|<a href="http://www.nabataty.com"> نباتاتي </a>
+<br><br><a href="#top">الرجوع لأعلى</a> </h4></center>
+<br><br>
+</div>
+
+</footer>
+   </body>
+</html>
